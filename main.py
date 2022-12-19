@@ -375,3 +375,39 @@
  #po     odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
  #  i w jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
 
+# szukane='Tadeusz'
+# plik='tadzio.txt'
+# x=0
+# for linia in open(plik,encoding='utf-8'):
+#     x+=1
+#     if szukane.lower() in linia.lower():
+#         print(x,linia.strip())
+
+# szukane='TADEUSZ'
+# plik='tadzio.txt'
+# x=0
+# for linia in open(plik,encoding='utf-8'):
+#     x+=1
+#     if szukane.lower() in linia.lower():
+#         print(x,linia.strip())
+
+# szukane=input('podaj szukaną frazę:\n')
+# plik=input('podaj plik do wyszukiwania:\n')
+# x=0
+# for linia in open(plik,encoding='utf-8'):
+#     x+=1
+#     if szukane.lower() in linia.lower():
+#         print(x,linia.strip())
+
+#przerwa do 14:50
+#
+# lista=[]
+# lista=list()
+# lista=[1,'nietoperz','toperz',2]
+# lista.append('dodane')
+# print(lista,type(lista))
+# for e in lista:
+#     print(e)
+
+#13. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
+#Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.

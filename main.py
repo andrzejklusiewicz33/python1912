@@ -220,4 +220,47 @@
   # oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
   # Kapitalizacja comiesięczna
 
-hajs=100000
+#hajs=100000
+
+#x++ #het!
+# x=x+1
+# x+=1
+#
+# hajs=100000
+# oprocentowanie=0.08
+# ilosc_miesiecy=24
+# for m in range(1,ilosc_miesiecy+1):
+#     hajs=round(hajs+(hajs*oprocentowanie/12),2)
+#     print(m,hajs)
+
+#
+# hajs=100000
+# oprocentowanie=-0.2
+# ilosc_miesiecy=60
+# for m in range(1,ilosc_miesiecy+1):
+#     hajs=round(hajs+(hajs*oprocentowanie/12),2)
+#     print(m,hajs)
+
+#przerwa obiadowa do 13:20
+
+#
+# while 1==1:
+#     pass
+#
+# while True:
+#     pass
+
+# suma=0
+# while suma<=1000:
+#     print(suma)
+#     suma=suma+100
+
+
+#8. Napisz program który będzie dodawał kolejne losowe wartości z zakresu
+# od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej
+# od wartosci podanej przez uzytkownika
+
+# import random
+# x=random.randint(1,100)
+# y=random.random()
+# print(x,y)

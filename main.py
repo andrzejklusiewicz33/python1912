@@ -264,3 +264,51 @@
 # x=random.randint(1,100)
 # y=random.random()
 # print(x,y)
+
+# import random
+# suma=0
+# max=int(input('podaj max zakres:'))
+# while suma<max:
+#     suma+=random.randint(1,10)
+#     print(suma)
+
+# import random
+# suma=0
+# max=int(input('podaj max zakres:'))
+# while suma<max:
+#     suma+=random.randint(1,10)
+#     print(suma)
+
+# import random
+# suma=0
+# max=int(input('podaj max zakres:'))
+# while suma<max:
+#     print(suma)
+#     suma+=random.randint(1,10)
+# tekst='siała BABA mak, nie wiedziała jak, dostała 10 lat bo nie płaciła VAT'
+# print(tekst.upper())
+# print(tekst.lower())
+# print(tekst.title())
+# print(len(tekst))
+# lista=[1,2,3,4]
+# print(len(lista))
+# print(tekst.replace('a','X'))
+# print(tekst.lower().replace('a','X').replace('e','Y'))
+# print(tekst.count('a'))
+# print(tekst.lower().count('a'))
+# if 'baba' in tekst.lower():
+#     print('jest')
+# else:
+#     print('nie ma')
+# print("hajs "*10)
+# print(tekst[0:11])
+# print(tekst[10:21])
+# print(tekst[10:21:2])
+# if "Java">"Python":
+#     print('chyba Cię gnie')
+# else:
+#     print('jasne że Python>Java')
+
+
+#9. Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie z
+# niego znaki ,.!? i wyświetli powiększony do dużych liter na konsoli

@@ -369,11 +369,11 @@
 # else:
 #     print('nie ma')
 
-#12. Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika
- # poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
- #  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka
- #po     odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
- #  i w jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
+# 12. Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika
+# poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
+#  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka
+# po     odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
+#  i w jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
 
 # szukane='Tadeusz'
 # plik='tadzio.txt'
@@ -399,7 +399,7 @@
 #     if szukane.lower() in linia.lower():
 #         print(x,linia.strip())
 
-#przerwa do 14:50
+# przerwa do 14:50
 #
 # lista=[]
 # lista=list()
@@ -409,8 +409,8 @@
 # for e in lista:
 #     print(e)
 
-#13. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
-#Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
+# 13. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
+# Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
 
 #
 # lista=[]
@@ -463,6 +463,50 @@
 # l1.extend(l2)
 # print(l1)
 
-#14. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
+# 14. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
 # Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista albo +)
 
+# import random
+#
+# l1 = []
+# l2 = []
+# for x in range(10):
+#     l1.append(random.randint(1, 10))
+#     l2.append(random.randint(1, 10))
+#
+# print(l1)
+# print(l2)
+# l3=l1+l2
+# print(l3)
+# l3=[*l1,*l2]
+# print(l3)
+# l1.extend(l2)
+# print(l1)
+
+# lista=[
+#     [1,'A'],
+#     [2,'B']
+# ]
+#
+# for e in lista:
+#     print(e)
+#
+# print(lista)
+
+# lista=[]
+# for x in range(1,11):
+#     podlista=[x,x*1000]
+#     lista.append(podlista)
+#
+# for e in lista:
+#     print(e)
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(  [x,x*1000] )
+#
+# for e in lista:
+#     print(e)
+
+#15. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
+# Kazdy taki element ma zawierac numer potegi oraz wartosc tej potegi dla liczby 2.

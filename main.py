@@ -1,10 +1,4 @@
 # test
-# print('dupa')
-# print('dupa')
-# print('dupa')
-# print('dupa')
-# print('dupa')
-
 # przerwa do 10:16
 #
 # print('hello world!')
@@ -16,7 +10,7 @@
 # print(type(imie))
 # imie=123
 # print(imie)
-#print('')
+# print('')
 
 # imie="Andrzej"
 # print('Siema, jestem '+imie+"!")
@@ -55,7 +49,64 @@
 #     print('igz nie jezd wiekży od zera')
 # print('koniec')
 
-#print('whatever...')
+# print('whatever...')
 
-#1. Napisz program który przyjmie od użyszkodnika imię oraz nazwisko, a następnie
+# 1. Napisz program który przyjmie od użyszkodnika imię oraz nazwisko, a następnie
 # wypisze na konsoli komunikat typu "Witaj TwojeImie TwojeNazwisko!"
+# imie=input('podaj imię:\n')
+# print(f"imie={imie}")
+
+# x=10
+# x,y=10,20
+#
+# imie, nazwisko = input("Podaj swoje imie: "), input("Podaj swoje nazwisko: ")
+# print(f"Witaj, twoje imie i nazwisko to: {imie} {nazwisko}")
+# print(f'Witaj, Twoje imię i nazwisko to: '+imie+" "+nazwisko+"!")
+#
+# print(pow(1.76, 2))
+# x = 1.5
+# y = 100
+# print(x / y)
+# z=x/y
+# print(z)
+
+
+# 2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika jego masę w kilogramach
+# i wzrost w metrach, wyliczy i wypisze BMI.
+#
+# x=float(  input('dej iksa:')  )
+# print(x,type(x))
+
+# wzrost = float(input('Podaj wzrost w metrach:\n'))
+# masa = float(input('Podaj masę w kilogramach:\n'))
+# bmi = round(masa / pow(wzrost, 2), 2)
+# print(f'bmi={bmi}')
+
+# x = -20
+# if x > 10:
+#     print('x>10')
+#     print('...')
+#     print('...')
+#     print('...')
+# else:
+#     print('x<=10')
+#     print('...')
+#     print('...')
+#     print('...')
+# print('koniec')
+#
+# x=3
+# if x==1:
+#    print('jeden')
+# elif x==2:
+#     print('dwa')
+# elif x==3:
+#     print('trzy')
+# elif x==4:
+#     print('cztery')
+# else:
+#     print('poza zakresem')
+
+#3. Niech użytkownik poda jakąś liczbę.
+# Jeśli poda dodatnią to chcemy wyświetlić tę wartość z informacją "wartość dodatnia",
+# jeśli zero to wyświetlamy z informacją "równe zero", jeśli ujemna to wyświetlamy "wartość ujemna".

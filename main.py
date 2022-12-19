@@ -577,3 +577,13 @@
 #
 # lista=[ [e,pow(2,e)] for e in range(1,11)]
 # print(lista)
+#
+# linia='1;Andrzej;Klusiewicz;1.76;80'
+# lista=linia.split(';')
+# print(lista)
+# print(lista[1])
+# print(lista[1].upper())
+# wzrost=float(lista[3])
+# print(wzrost,type(wzrost))
+
+#18. Napisz program który z pliku dane.csv wyświetli powiekszone imiona i nazwiska oraz wzrost i masę

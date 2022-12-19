@@ -574,3 +574,6 @@
 #17. Korzystając z list składanych wygeneruj listę 10 elementow której
 # każdy element również będzie listą. Pierwszy element tej podlisty to numer potegi,
 # a drugi to wartosc tej potegi dla liczby 2
+#
+# lista=[ [e,pow(2,e)] for e in range(1,11)]
+# print(lista)

@@ -124,8 +124,63 @@
 
 #4. Rozbuduj swój program do bmi w taki sposob by poza wyswietleniem obliczonego bmi
 #  wyświetlił nam również odpowiedni opis wg skali z Wikipedii.
+#
+# wzrost = float(input('Podaj wzrost w metrach:\n'))
+# masa = float(input('Podaj masę w kilogramach:\n'))
+# bmi = round(masa / pow(wzrost, 2), 2)
+# print(f'bmi={bmi}')
+#
+# tekst=input('dej tekst:').replace(",",".")
+# print(tekst)
 
-wzrost = float(input('Podaj wzrost w metrach:\n'))
-masa = float(input('Podaj masę w kilogramach:\n'))
-bmi = round(masa / pow(wzrost, 2), 2)
-print(f'bmi={bmi}')
+# x=20
+# y=20
+# if x>10 and y>10:
+#     print('oba wieksze od 10')
+#
+#
+# if x>10 or y>10:
+#     print('co najmniej jeden wiekszy od 10')
+
+# wzrost = float(input('Podaj wzrost w metrach:\n'))
+# masa = float(input('Podaj masę w kilogramach:\n'))
+# bmi = round(masa / pow(wzrost, 2), 2)
+# print(f'bmi={bmi}')
+# if bmi<16:
+#     print('wygłodzenie')
+# elif bmi<17:
+#     print('wychudzenie')
+# elif bmi<18.5:
+#     print('niedowaga')
+# elif bmi<25:
+#     print('masa prawidłowa')
+# elif bmi<30:
+#     print('nadwaga')
+# elif bmi<35:
+#     print('1 stopnień przypakowania')
+# elif bmi<40:
+#     print('2 stopień przypakowania')
+# else:
+#     print('3 stopień przypakowania')
+#
+# for x in range(10):
+#     print('boom z bazuki')
+#     print('dziura w podłodze')
+#
+#
+
+# for x in range(10):
+#     print(f'boom z bazuki x={x}')
+#     print('dziura w podłodze')
+
+# for x in range(1,11):
+#     print(f'boom z bazuki x={x}')
+#
+# for x in range(1,11,2):
+#     print(f'boom z bazuki x={x}')
+# print(f'x po pętli: {x}')
+#
+# for x in range(1,11):
+#     print(x*1000)
+
+#5. Wyświetl 20 kolejnych potęg liczby 2

@@ -107,7 +107,7 @@
 # else:
 #     print('poza zakresem')
 
-#3. Niech użytkownik poda jakąś liczbę.
+# 3. Niech użytkownik poda jakąś liczbę.
 # Jeśli poda dodatnią to chcemy wyświetlić tę wartość z informacją "wartość dodatnia",
 # jeśli zero to wyświetlamy z informacją "równe zero", jeśli ujemna to wyświetlamy "wartość ujemna".
 #
@@ -120,9 +120,9 @@
 #     print(f'{x} to wartość ujemna')
 
 
-#przerwa do 11:40
+# przerwa do 11:40
 
-#4. Rozbuduj swój program do bmi w taki sposob by poza wyswietleniem obliczonego bmi
+# 4. Rozbuduj swój program do bmi w taki sposob by poza wyswietleniem obliczonego bmi
 #  wyświetlił nam również odpowiedni opis wg skali z Wikipedii.
 #
 # wzrost = float(input('Podaj wzrost w metrach:\n'))
@@ -183,13 +183,13 @@
 # for x in range(1,11):
 #     print(x*1000)
 
-#5. Wyświetl 20 kolejnych potęg liczby 2
+# 5. Wyświetl 20 kolejnych potęg liczby 2
 
 # for p in range(1,21):
 #     print(p,pow(2,p))
 
 
-#for p in range(1,21): print(p,pow(2,p))
+# for p in range(1,21): print(p,pow(2,p))
 
 # for x in range(-10,11):
 #     if x<0:
@@ -199,10 +199,10 @@
 #     else:
 #         print(f'{x} jest dodatni')
 
-#6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
+# 6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
 #  parzysta czy nieparzysta
 
-#print(11%2)
+# print(11%2)
 #
 # for i in range(1,101):
 #     if i%2==0:
@@ -210,19 +210,19 @@
 #     else:
 #         print(f'{i} jest nieparzyste')
 
-#import this
+# import this
 
-#7.Napisz symulator lokaty. Symulator ma przyjmować przez zmienne:
-  # - kwotę lokaty
-  # - oprocentowanie w skali roku
-  # - ilość miesięcy na jaką zakladamy lokatę
-  # Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
-  # oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
-  # Kapitalizacja comiesięczna
+# 7.Napisz symulator lokaty. Symulator ma przyjmować przez zmienne:
+# - kwotę lokaty
+# - oprocentowanie w skali roku
+# - ilość miesięcy na jaką zakladamy lokatę
+# Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
+# oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
+# Kapitalizacja comiesięczna
 
-#hajs=100000
+# hajs=100000
 
-#x++ #het!
+# x++ #het!
 # x=x+1
 # x+=1
 #
@@ -241,7 +241,7 @@
 #     hajs=round(hajs+(hajs*oprocentowanie/12),2)
 #     print(m,hajs)
 
-#przerwa obiadowa do 13:20
+# przerwa obiadowa do 13:20
 
 #
 # while 1==1:
@@ -256,7 +256,7 @@
 #     suma=suma+100
 
 
-#8. Napisz program który będzie dodawał kolejne losowe wartości z zakresu
+# 8. Napisz program który będzie dodawał kolejne losowe wartości z zakresu
 # od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej
 # od wartosci podanej przez uzytkownika
 
@@ -310,7 +310,7 @@
 #     print('jasne że Python>Java')
 
 
-#9. Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie z
+# 9. Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie z
 # niego znaki ,.!? i wyświetli powiększony do dużych liter na konsoli
 #
 # tekst=input('podaj tekst:\n')
@@ -321,7 +321,7 @@
 # tekst=input('podaj tekst:\n').replace(',','').replace('.','').replace('!','').replace('?','').upper()
 # print(tekst)
 
-#print(input('podaj tekst:\n').replace(',','').replace('.','').replace('!','').replace('?','').upper())
+# print(input('podaj tekst:\n').replace(',','').replace('.','').replace('!','').replace('?','').upper())
 
 
 #
@@ -334,7 +334,7 @@
 #     print(len(linia.strip()),linia.strip())
 
 
-#10. Napisz program który wyświetli na konsoli niepuste linie z pliku tekstowego którego
+# 10. Napisz program który wyświetli na konsoli niepuste linie z pliku tekstowego którego
 # nazwę poda użytkownik
 #
 # nazwa_pliku=input('podaj nazwę pliku:\n')
@@ -345,6 +345,33 @@
 # calosc=open('tadzio.txt',encoding='utf-8').read()
 # print(calosc.replace('a','X'))
 
-#11. Napisz program który zliczy ilość wystąpień małej
+# 11. Napisz program który zliczy ilość wystąpień małej
 # lub dużej wersji ciagu tekstowego podanego przez użytkownika
 # w pliku którego nazwę również poda użytkownik.
+#
+# szukane = 'TADEUSZ'
+# plik = 'tadzio.txt'
+# calosc = open(plik, encoding='utf-8').read()
+# x = calosc.lower().count(szukane.lower())
+# print(x)
+
+#
+# szukane = input('podaj szukaną frazę:\n')
+# plik = input('podaj nazwę pliku:\n')
+# calosc = open(plik, encoding='utf-8').read()
+# x = calosc.lower().count(szukane.lower())
+# print(f'Jest {x} wystąpień słowa "{szukane}" w pliku "{plik}"')
+
+#
+# linia='siała BABA mak'
+# if 'BAba'.lower() in linia.lower():
+#     print('jest')
+# else:
+#     print('nie ma')
+
+#12. Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika
+ # poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
+ #  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka
+ #po     odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
+ #  i w jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
+

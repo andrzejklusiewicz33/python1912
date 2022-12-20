@@ -825,3 +825,43 @@
 #przerwa do 10:28
 
 #23.Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
+
+#
+# dane= [ linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]
+# for d in dane:
+#     d.append(round(float(d[4])/pow(float(d[3]),2),2))
+#
+# dane.sort(key=lambda e:e[5],reverse=True)
+# for d in dane:
+#     print(d)
+
+
+# tekst="siała baba mak"
+# if "bab".lower() in tekst.lower():
+#     print('jest baba w tekście')
+# else:
+#     print('nie ma baby w tekście')
+# lista=tekst.split()
+# print(lista)
+#
+# if "bab" in lista:
+#     print('jest baba w liście')
+# else:
+#     print('nie ma baby w liście')
+#
+# for e in lista:
+#     if 'bab' in e:
+#         print(f'jest w {e}')
+#     else:
+#         print(f'nie ma w {e}')
+
+#
+# import os
+# for e in os.walk("e:\\"):
+#     print(e)
+
+#24.
+# Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
+# Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną
+# frazę - wraz ze ścieżkami. Wyszukiwarka ma być nieczuła na wielkość liter
+

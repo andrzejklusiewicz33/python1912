@@ -1192,9 +1192,15 @@
 # Tadeusz
 # tadeusz
 # TADEUSZ
+#
+# lista=[
+#     ('slowo1',5421),
+#     ('slowo2',4566),
+#     ('slowo',3321)
+# ]
 
-lista=[
-    ('slowo1',5421),
-    ('slowo2',4566),
-    ('slowo',3321)
-]
+tekst="siała, baba!, mak.?"
+niechciane=[',','.','!','?']
+for n in niechciane:
+    tekst=tekst.replace(n,'')
+print(tekst)

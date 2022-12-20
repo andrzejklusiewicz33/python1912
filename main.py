@@ -1174,12 +1174,12 @@
 # for k in sl:
 #     print(k,sl[k])
 
-slownik=dict()
-slownik['klucz1']=123
-if 'klucz1' in slownik:
-    print('mamy taki klucz')
-else:
-    print('nie mamy takiego klucza')
+# slownik=dict()
+# slownik['klucz1']=123
+# if 'klucz1' in slownik:
+#     print('mamy taki klucz')
+# else:
+#     print('nie mamy takiego klucza')
 
 #32. Napisz system który zwróci nam ilość wystąpień każdego ze słow w pliku w postaci listy krotek.
 # [  (slowo,ilosc_wystapien),(slowo,ilosc_wystapien)   ]. Nazwa pliku ma zostać przekazana przez zmienną.
@@ -1238,23 +1238,61 @@ else:
 #242s
 
 
-import time
-poczatek=time.time()
+# import time
+# poczatek=time.time()
+# calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+# niechciane=['.',',','!','?','/',':',';','(',')','-','…']
+# for n in niechciane:
+#     calosc=calosc.replace(n,'')
+# slowa=calosc.split()
+# sl=dict()
+# for s in slowa:
+#     if s in sl:
+#         #sl[s]=sl[s]+1
+#         sl[s]+=1
+#     else:
+#         sl[s]=1
+# for k in sl:
+#     print(k,sl[k])
+# koniec=time.time()
+# print(f'trwało to {koniec-poczatek} s')
+
+#Przepakuj dane ze słownika do listy i posortuj (a następnie wypisz)
+
+# import time
+# poczatek=time.time()
+# calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+# niechciane=['.',',','!','?','/',':',';','(',')','-','…']
+# for n in niechciane:
+#     calosc=calosc.replace(n,'')
+# slowa=calosc.split()
+# sl=dict()
+# for s in slowa:
+#     if s in sl:
+#         #sl[s]=sl[s]+1
+#         sl[s]+=1
+#     else:
+#         sl[s]=1
+# wynik=[]
+# for k in sl:
+#     wynik.append([k,sl[k]])
+# wynik.sort(key=lambda e:e[1], reverse=True)
+# for w in wynik:
+#     print(w)
+# koniec=time.time()
+# print(f'trwało to {koniec-poczatek} s')
+
+
 calosc=open('tadzio.txt',encoding='utf-8').read().lower()
-niechciane=['.',',','!','?','/',':',';','(',')','-','…']
-for n in niechciane:
+for n in ['.',',','!','?','/',':',';','(',')','-','…']:
     calosc=calosc.replace(n,'')
-slowa=calosc.split()
 sl=dict()
-for s in slowa:
+for s in calosc.split():
     if s in sl:
-        #sl[s]=sl[s]+1
         sl[s]+=1
     else:
         sl[s]=1
-for k in sl:
-    print(k,sl[k])
-koniec=time.time()
-print(f'trwało to {koniec-poczatek} s')
-
-#Przepakuj dane ze słownika do listy i posortuj (a następnie wypisz)
+wynik=[]
+wynik=sorted([ [k,sl[k]] for k in sl],key=lambda e:e[1], reverse=True)
+for w in wynik:
+    print(w)

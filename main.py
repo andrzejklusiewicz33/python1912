@@ -610,5 +610,15 @@
 #     print(w)
 #
 # for w in [ linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
-#     print(w)
+#     print(w[4]*2)
+#
+# print("kotek "*10)
+#get_data('dane.csv',';')
 
+
+# for w in [ linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
+#     print(float(w[4])*2,type(w[4]),type(float(w[4])))
+
+#20. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
+#   id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
+# masa/power(wzrost,2)

@@ -622,3 +622,67 @@
 #20. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
 #   id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
 # masa/power(wzrost,2)
+#
+# for e in [ linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
+#     masa=float(e[4])
+#     wzrost=float(e[3])
+#     bmi=round(masa/pow(wzrost,2),2)
+#     print(*e,bmi)
+
+#
+# for e in [ linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
+#     bmi=round(float(e[4])/pow(float(e[3]),2),2)
+#     print(*e,bmi)
+
+#
+# for e in [ linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
+#     print(*e,round(float(e[4])/pow(float(e[3]),2),2))
+
+#
+# for e in [ linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
+#     e.append(round(float(e[4])/pow(float(e[3]),2),2))
+#     print(*e)
+#
+# lista=[1,6,2,9,3,2,6,5,1]
+# lista.sort()
+# print(lista)
+
+#
+# lista=[1,6,2,9,3,2,6,5,1]
+# lista.sort(reverse=True)
+# print(lista)
+
+
+# lista=[1,6,2,9,3,2,6,5,1]
+# lista.sort()
+# lista.reverse()
+# print(lista)
+#
+# lista=['6','22','11','2','1','koza']
+# lista.sort()
+# print(lista)
+
+# lista=[1,6,2,9,3,2,6,5,1]
+# druga=sorted(lista,reverse=True)
+# print(druga)
+#
+# krotka=(1,6,2,9,3,2,6,5,1)
+# print(krotka,type(krotka))
+# #krotka.sort()
+# #druga=sorted(krotka)
+# druga=tuple(sorted(krotka))
+# print(druga,type(druga))
+# #druga=sorted(lista,reverse=True)
+# #print(druga)
+
+#
+# lista=[1,6,2,9,3,2,6,5,1]
+# wynik=[str(e) for e in lista]
+# print(wynik)
+#
+# lista=[1,6,2,9,'nietoperz',3,2,6,5,1]
+# wynik=[e for e in lista if type(e)==int]
+# print(wynik)
+
+#21. ! Wygeneruj listę 10 elementów o losowej wartości liczbowej,
+# posortuj listę i wyświetl jej zawartość linia po linii

@@ -1174,6 +1174,12 @@
 # for k in sl:
 #     print(k,sl[k])
 
+slownik=dict()
+slownik['klucz1']=123
+if 'klucz1' in slownik:
+    print('mamy taki klucz')
+else:
+    print('nie mamy takiego klucza')
 
 #32. Napisz system który zwróci nam ilość wystąpień każdego ze słow w pliku w postaci listy krotek.
 # [  (slowo,ilosc_wystapien),(slowo,ilosc_wystapien)   ]. Nazwa pliku ma zostać przekazana przez zmienną.
@@ -1198,9 +1204,33 @@
 #     ('slowo2',4566),
 #     ('slowo',3321)
 # ]
+#
+# tekst="siała, baba!, mak.?"
+# niechciane=[',','.','!','?']
+# for n in niechciane:
+#     tekst=tekst.replace(n,'')
+# print(tekst)
+#
+# plik = 'tadzio.txt'
+# calosc = open(plik, encoding='utf-8').read()
+#szukane = [ e.strip().split(" ") for e in calosc]
+# tekst="siała baba mak"
+# for l in tekst:
+#     print(l)
 
-tekst="siała, baba!, mak.?"
-niechciane=[',','.','!','?']
+
+#print(calosc[:10])
+
+import time
+poczatek=time.time()
+calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+niechciane=['.',',','!','?','/',':',';','(',')','-','…']
 for n in niechciane:
-    tekst=tekst.replace(n,'')
-print(tekst)
+    calosc=calosc.replace(n,'')
+slowa=calosc.split()
+print(slowa)
+#poniżej złe rozwiązanie
+for s in slowa:
+    print(s,slowa.count(s))
+koniec=time.time()
+print(f'trwało to {koniec-poczatek} s')

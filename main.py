@@ -1066,3 +1066,36 @@
 
 # 28. Zduplikuj jeden z wierszy w pliku dane.csv.
 # Napisz kod który zwróci do postaci listy krotek zawartość tego pliku z danymi bez powtórek.
+#
+# wynik=list(set([ tuple(linia.strip().split(';')) for linia in open('dane.csv',encoding='utf-8')]))
+# for w in wynik:
+#     print(w)
+# print(type(wynik))
+
+#
+# for w in list(set([ tuple(linia.strip().split(';')) for linia in open('dane.csv',encoding='utf-8')])):
+#     print(w)
+
+#29.
+# Przetwórz plik dane.csv w taki sposób by w efekcie umieścić w pliku output.csv
+# dane z pliku dane.csv wzbogacone o obliczone BMI,
+# bez duplikatów i rozwiązując problem  podania przecinka w miejsce kropki
+# we wzroście i masie oraz problem z pustymi wierszami.
+
+
+# plik=open('pliczek.txt',encoding='utf-8',mode='w')
+# plik.write("1;Andrzej\n")
+# plik.write("2;Czesio\n")
+# plik.close()
+#
+# with open('pliczek.txt',encoding='utf-8',mode='w') as plik:
+#     plik.write("1;Andrzej\n")
+#     plik.write("2;Czesio\n")
+# print('koniec')
+#
+# linia="1;Andrzej;Klusiewicz;1.76;80\n"
+# lista=linia.strip().split(';')
+# lista.append(str(25))
+# print(lista)
+# linia_csv=";".join(lista)
+# print(linia_csv)

@@ -686,3 +686,134 @@
 
 #21. ! Wygeneruj listę 10 elementów o losowej wartości liczbowej,
 # posortuj listę i wyświetl jej zawartość linia po linii
+
+# import random
+# lista=[random.randint(1,1000) for _ in range(10)]
+# print(lista)
+# lista.sort()
+# for e in lista:
+#     print(e)
+#
+# import random
+# lista=[random.randint(1,1000) for _ in range(10)]
+# print(lista)
+# for e in sorted(lista):
+#     print(e)
+#
+# import random
+# for e in sorted([random.randint(1,1000) for _ in range(10)]):
+#     print(e)
+#
+# lista=[
+#     [2,'A'],
+#     [1,'B'],
+#     [3,'D'],
+#     [0,'C']
+# ]
+#
+# lista.sort(reverse=True)
+#
+# for e in lista:
+#     print(e)
+
+
+#from operator import itemgetter
+#
+# lista=[
+#     [2,'A'],
+#     [1,'B'],
+#     [3,'D'],
+#     [0,'C']
+# ]
+#
+# lista.sort(key=itemgetter(1))
+#
+# for e in lista:
+#     print(e)
+
+#
+# lista=[
+#     [2,'A'],
+#     [1,'B'],
+#     [3,'D'],
+#     [0,'C']
+# ]
+#
+# lista.sort(key=lambda e:e[1])
+#
+# for e in lista:
+#     print(e)
+
+#
+# lista=[
+#     [2,'A'],
+#     [1,'B'],
+#     [3,'D'],
+#     [0,'C']
+# ]
+# kopia=sorted(lista,key=lambda e:e[1])
+# for e in kopia:
+#     print(e)
+
+#
+# lista=[
+#     [2,'A'],
+#     [1,'B'],
+#     [3,'D'],
+#     [0,'C']
+# ]
+# for e in sorted(lista,key=lambda e:e[1]):
+#     print(e)
+
+#SQLAlchemy
+#Django ORM
+#
+# class Person:
+#     def __init__(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# data=[Person("Eustachy","Enterman"),Person("Benek","Burczymucha"),Person("Stefan","Szymczyk")]
+# data.sort(key=lambda p:p.last_name, reverse=True)
+# for d in data:
+#     print(d)
+
+#
+# class Person:
+#     def __init__(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# data=[Person("Eustachy","Enterman"),Person("Benek","Burczymucha"),Person("Stefan","Szymczyk")]
+# for d in sorted(data,key=lambda p:p.last_name, reverse=True):
+#     print(d)
+#
+#
+#
+#
+# class Person:
+#     def __init__(self, fn, ln):
+#         self.first_name = fn
+#         self.last_name = ln
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+#
+# data = [Person("Eustachy", "Enterman"), Person("Benek", "Burczymucha"), Person("Stefan", "Szymczyk")]
+#
+# def sortowanie_person(p):
+#     p.last_name=p.last_name.upper()
+#     return p.last_name
+#
+# for d in sorted(data, key=lambda p:sortowanie_person(p), reverse=True):
+#     print(d)
+#
+
+
+#22.  Wczytaj do listy kolejne wiersze z pliku dane.csv.
+# Dane posortuj po nazwiskach i wyswietl linia po linii na konsoli.

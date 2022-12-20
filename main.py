@@ -1023,6 +1023,46 @@
 # print(f'z2-z1={zbior2.difference(zbior1)}')
 
 
-#27. Wygeneruj dwa zestawy, dodaj do nich po 20 (w przypadku duplikatów lista może
+# 27. Wygeneruj dwa zestawy, dodaj do nich po 20 (w przypadku duplikatów lista może
 # być mniejsza niż 20 elementów) losowych liczb z zakresu 1-40.
 # Wyswietl ich sumę, różnicę i część wspólną
+
+# import random
+# zbior1=set([random.randint(1,40) for _ in range(20)])
+# zbior2=set([random.randint(1,40) for _ in range(20)])
+# print(f'suma={zbior1.union(zbior2)}')
+# print(f'część wspólna={zbior1.intersection(zbior2)}')
+# print(f'z1-z2={zbior1.difference(zbior2)}')
+# print(f'z2-z1={zbior2.difference(zbior1)}')
+#
+# import random
+# zbior1= {random.randint(1,40) for _ in range(20)}
+# zbior2={random.randint(1,40) for _ in range(20)}
+# print(f'suma={zbior1.union(zbior2)}')
+# print(f'część wspólna={zbior1.intersection(zbior2)}')
+# print(f'z1-z2={zbior1.difference(zbior2)}')
+# print(f'z2-z1={zbior2.difference(zbior1)}')
+
+# przerwa do 13:04
+
+
+# lista1=[1,'A']
+# z1={
+#     lista1,
+#     [2,'B'],
+#     [3,'C']
+# }
+# lista1[0]=10
+
+
+# z1 = {
+#     (1, 'A'),
+#     (2, 'B'),
+#     (2, 'B'),
+#     (2, 'B'),
+#     (3, 'C')
+# }
+# print(z1)
+
+# 28. Zduplikuj jeden z wierszy w pliku dane.csv.
+# Napisz kod który zwróci do postaci listy krotek zawartość tego pliku z danymi bez powtórek.

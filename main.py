@@ -1099,3 +1099,8 @@
 # print(lista)
 # linia_csv=";".join(lista)
 # print(linia_csv)
+
+
+lista=[ linia.replace(',','.').strip().split(';') for linia in open('dane.csv',encoding='utf-8') if len(linia.strip())>0]
+for e in lista:
+    print(e,float(e[3]))

@@ -921,3 +921,77 @@
 #25. Stwórz dwie krotki.
 # Jedna ma zawierać 10 losowych liczb zakresu 1-10, druga 10 losowych liczb zakresu 11-20.
 # Stwórz trzecią krotkę która ma zawierać dane z obu krotek. Trzecią krotkę wypisz na konsoli
+# import random
+# krotka1=tuple([random.randint(1,10) for _ in range(10)])
+#
+# print(krotka1,type(krotka1))
+#
+# import random
+# krotka1=tuple([random.randint(1,10) for _ in range(10)])
+# krotka2=tuple([random.randint(11,20) for _ in range(10)])
+# print(krotka1)
+# print(krotka2)
+# #krotka3=(*krotka1,*krotka2)
+# krotka3=krotka1+krotka2
+# print(krotka3)
+
+# import random
+# krotka1=(random.randint(1,10) for _ in range(10))
+# print(*krotka1,type(krotka1))
+
+
+#import random
+# gen=(random.randint(1,10) for _ in range(10))
+# print(next(gen))
+# print(next(gen))
+# print(next(gen))
+#
+# for g in (random.randint(1,10) for _ in range(10)):
+#     print(g)
+# #
+# import time
+# def funkcja():
+#     wynik=[]
+#     for x in range(1,11):
+#         time.sleep(1)
+#         wynik.append(x)
+#     return wynik
+#
+# for e in funkcja():
+#     print(e)
+# #
+
+#
+# import time
+# def funkcja():
+#     for x in range(1,11):
+#         time.sleep(1)
+#         yield f'element numer {x}'
+#
+# for e in funkcja():
+#     print(e)
+
+#
+# def funkcja():
+#     x=0
+#     while True:
+#         x+=1
+#         yield x
+#
+# for f in funkcja():
+#     print(f)
+
+#
+# tab=[]
+# while True:
+#     tab.append("terefere kuku")
+#
+# import random
+# losowe=[random.randint(1,1000) for _ in range(1000)]
+# print(losowe)
+# print(f'suma={sum(losowe)}')
+# print(f'max={max(losowe)}')
+# print(f'min={min(losowe)}')
+# print(f'max={sum(losowe)/len(losowe)}')
+
+#26. Napisz kod ktora wyświetli w postaci listy krotek zawartość pliku dane.csv

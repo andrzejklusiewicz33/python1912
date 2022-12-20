@@ -1220,6 +1220,23 @@ else:
 
 
 #print(calosc[:10])
+#
+# import time
+# poczatek=time.time()
+# calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+# niechciane=['.',',','!','?','/',':',';','(',')','-','…']
+# for n in niechciane:
+#     calosc=calosc.replace(n,'')
+# slowa=calosc.split()
+# print(slowa)
+# #poniżej złe rozwiązanie
+# for s in slowa:
+#     print(s,slowa.count(s))
+# koniec=time.time()
+# print(f'trwało to {koniec-poczatek} s')
+
+#242s
+
 
 import time
 poczatek=time.time()
@@ -1228,9 +1245,16 @@ niechciane=['.',',','!','?','/',':',';','(',')','-','…']
 for n in niechciane:
     calosc=calosc.replace(n,'')
 slowa=calosc.split()
-print(slowa)
-#poniżej złe rozwiązanie
+sl=dict()
 for s in slowa:
-    print(s,slowa.count(s))
+    if s in sl:
+        #sl[s]=sl[s]+1
+        sl[s]+=1
+    else:
+        sl[s]=1
+for k in sl:
+    print(k,sl[k])
 koniec=time.time()
 print(f'trwało to {koniec-poczatek} s')
+
+#Przepakuj dane ze słownika do listy i posortuj (a następnie wypisz)

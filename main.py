@@ -864,4 +864,60 @@
 # Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
 # Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną
 # frazę - wraz ze ścieżkami. Wyszukiwarka ma być nieczuła na wielkość liter
+#
+# import os
+# katalog="e:\\"
+# plik="oracle.jar"
+# print( os.path.join(katalog,plik) )
+# print( os.path.join(e[0],plik) )
+#
+# import os
+# katalog_startowy=input('podaj katalog startowy:\n')
+# szukane=input('podaj szukaną frazę:\n').lower()
+# for e in os.walk(katalog_startowy):
+#     for k in e[1]:
+#         if szukane in k.lower():
+#             print(os.path.join(e[0],k))
+#     for p in e[2]:
+#         if szukane in p.lower():
+#             print(os.path.join(e[0],p))
+#
 
+#
+# if "dupa".__contains__("d"):
+#     print(1)
+# else:
+#     print(2)
+
+
+#przerwa do 11:35
+
+#
+# krotka=(1,2,3,4,'koza',[1,4,'coś'])
+#
+# for k in krotka:
+#     print(k)
+#
+# if 'koza' in krotka:
+#     print('jest koza')
+
+#
+# krotka=(5,9,1,4,2,3,7)
+# druga=sorted(krotka)
+# print(druga)
+
+
+# krotka=(5,9,1,4,2,3,7)
+# druga=tuple(sorted(krotka))
+# print(druga)
+#
+# krotka=(5,9,1,4,2,3,7)
+# print(krotka)
+# lista=list(krotka)
+# print(lista)
+# krotka2=tuple(lista)
+# print(krotka2)
+
+#25. Stwórz dwie krotki.
+# Jedna ma zawierać 10 losowych liczb zakresu 1-10, druga 10 losowych liczb zakresu 11-20.
+# Stwórz trzecią krotkę która ma zawierać dane z obu krotek. Trzecią krotkę wypisz na konsoli

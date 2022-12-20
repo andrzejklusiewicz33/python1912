@@ -1100,7 +1100,50 @@
 # linia_csv=";".join(lista)
 # print(linia_csv)
 
+#
+# lista=[ linia.replace(',','.').strip().split(';') for linia in open('dane.csv',encoding='utf-8') if len(linia.strip())>0]
+# for e in lista:
+#     e.append(str(round(float(e[4])/pow(float(e[3]),2),2)))
+#
+# wynik=list(set([tuple(e) for e in lista]))
+#
+# with open('output.csv',encoding='utf-8',mode='w') as plik:
+#     for w in wynik:
+#         plik.write(";".join(w)+"\n")
 
-lista=[ linia.replace(',','.').strip().split(';') for linia in open('dane.csv',encoding='utf-8') if len(linia.strip())>0]
-for e in lista:
-    print(e,float(e[3]))
+# lista=[ linia.replace(',','.').strip().split(';') for linia in open('dane.csv',encoding='utf-8') if len(linia.strip())>0]
+# for e in lista:
+#     e.append(str(round(float(e[4])/pow(float(e[3]),2),2)))
+#
+# with open('output.csv',encoding='utf-8',mode='w') as plik:
+#     for w in list(set([tuple(e) for e in lista])):
+#         plik.write(";".join(w)+"\n")
+#
+# sl=dict()
+# sl['tekst']='wartość 1'
+# sl['liczba']=123
+# sl['lista']=[1,2,3]
+# sl['krotka']=(1,2,3,4)
+#
+# print(sl['liczba'])
+#
+# print('############')
+#
+# # for k in sl.keys():
+# #     print(k,sl[k])
+#
+# del sl['liczba']
+# for k in sl:
+#     print(k,sl[k])
+
+# for v in sl.values():
+#     print(v)
+
+#print(conf['enconding'])
+
+#30. Stwórz plik ustawienia.conf i umieść w nim poniższe dane
+# encoding=utf-8
+# timezone=-2
+# color=black
+# Następnie wczytaj dane do słownika w ten sposób by pierwsza kolumna stanowila klucze a druga przypisane do nich
+# wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości

@@ -1635,5 +1635,39 @@
 #40.Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
 # Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było  podawać nazwy pakietu ani modułu.
 
+#
+# from body.functions import bmi
+# print(bmi(1.76,80))
+#
+# import requests
+# #response=requests.get('https://jsystems.pl/static/blog/python/dane.json')
+# response=requests.get('https://jsystems.pl/')
+# print(f"reponse.status_code={response.status_code}")
+# if response.status_code==200:
+#     print(response.text)
 
 
+#
+# import requests
+# response=requests.get('https://jsystems.pl/static/blog/python/dane.json')
+# print(f"reponse.status_code={response.status_code}")
+# if response.status_code==200:
+#     dane=response.json()
+#     print(dane['nazwisko'])
+#     adres=dane['adres']
+#     print(adres['miasto'])
+#     print(dane['adres']['miasto'])
+#     for j in dane['jezyki']:
+#         print(j)
+
+# import requests
+# data={
+#     "klucz1":"wartość 1",
+#     "klucz2":1234
+# }
+# response=requests.post('https://jsystems.pl/static/blog/python/dane.json',data=data)
+# print(response.status_code)
+
+#41. z usługi sieciowej http://jsystems.pl/Universe/samaTabelka.do pobierz informację o szkoleniach.
+# na konsoli wyswietl tytuly, miasta i daty wszystkich szkolen które w tytule mają malymi badz duzymi
+# literami "Python" i status terminu gwarantowanego (pole terminyGwarantowany=1)

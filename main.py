@@ -1680,6 +1680,13 @@
 #         print(d['tytul_szkolenia'],d['termin'],d['miasto'])
 
 #obiadek do 13:15
+#
+# import psycopg2
+# connection=psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",password='oracle', port=5432)
+# connection.close()
+
 
 import psycopg2
-connection=psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",password='oracle', port=5432)
+with psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",password='oracle', port=5432) as connection:
+    pass
+print('koniec')

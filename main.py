@@ -1374,3 +1374,83 @@
 # W przypadku pojawienia się wyjątku na obliczaniu bmi dla
 # któregoś wiersza chcemy go zapisać (cały wiersz) w osobnym pliku bledy.csv wzbogacony o informację o rodzaju błędu
 #4;Andrzej;1,89;90;IOERROR
+
+
+# for e in [ linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
+#     try:
+#         bmi=round(float(e[4])/pow(float(e[3]),2),2)
+#         print(e,bmi)
+#     except ValueError:
+#         print(f'ValueError na {e}')
+#         linia=";".join(e)+f";ValueError\n"
+#         with open('bledy.csv',encoding='utf-8',mode='w') as plik:
+#             plik.write(linia)
+
+#
+# for e in [ linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
+#     try:
+#         print(e,round(float(e[4])/pow(float(e[3]),2),2))
+#     except ValueError:
+#         with open('bledy.csv',encoding='utf-8',mode='w') as plik:
+#             plik.write(";".join(e)+f";ValueError\n")
+
+
+#przerwa do 10:10
+
+#
+# def funkcja():
+#     print('hello')
+#
+# funkcja()
+#
+# def dodawanie(x,y):
+#     print(x+y)
+#
+# def dodawanie(x,y,z):
+#     pass
+#
+# dodawanie(10,30)
+#
+# def oddaj_koze():
+#     return 'koza'
+#
+# print(oddaj_koze())
+# dane=oddaj_koze()
+# print(dane)
+#
+# def pomnoz(x,y):
+#     return x*y
+#
+#
+# def pomnoz(x,y):
+#     wynik=x*y
+#     return wynik
+#
+# print(pomnoz(3,3))
+#
+# def wtf():
+#     return 'omg'
+#     print('lol')
+#
+# wtf()
+
+# def bmi_opis(b):
+#     if b<18.5:
+#         return 'za chudy'
+#     elif b<25:
+#         return 'masa ok'
+#     else:
+#         return 'za niski'
+#
+# print(bmi_opis(30))
+
+
+# def omg():
+#     return 1,3
+#
+# x,y=omg()
+# print(x,y)
+# print(omg()[0])
+
+#36. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone do 2 miejsc po przecinku BMI.
+# W przypadku pojawienia się wyjątku, wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.

@@ -1734,3 +1734,25 @@
 # f=Faker("PL_pl")
 # for x in range(100):
 #     print(f.first_name(),f.last_name(),f.email(),f.company(),f.phone_number(),f.paragraph())
+#
+# import random
+# import psycopg2
+# from faker import Faker
+#
+# f=Faker("PL_pl")
+# with psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",password='oracle', port=5432) as connection:
+#     cursor=connection.cursor()
+#     for _ in range(100):
+#         sql=f"insert into employees(first_name,last_name,salary) values ('{f.first_name()}','{f.last_name()}',{random.randint(1000,10000)});"
+#         cursor.execute(sql)
+#     connection.commit()
+
+#44. Załaduj do tabelki players wszystkie dane z pliku dane.csv
+#Zadbaj o ogarnięcie sytuacji w której spróbujesz dodać do tabeli wiersze o istniejących już id
+#
+# try:
+#     print(1/0)
+# except ZeroDivisionError:
+#     print('nie dziel przez zero')
+# except Exception as e:
+#     print(e,type(e))

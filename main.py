@@ -1756,3 +1756,24 @@
 #     print('nie dziel przez zero')
 # except Exception as e:
 #     print(e,type(e))
+
+import psycopg2
+dane=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+with psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",password='oracle', port=5432) as connection:
+    cursor = connection.cursor()
+    for d in dane:
+        try:
+            sql=f"insert into players values({d[0]},'{d[1]}','{d[2]}',{d[3]},{d[4]})"
+            print(sql)
+            cursor.execute(sql)
+            connection.commit()
+        except psycopg2.errors.UniqueViolation:
+            print(f'zawodnika o id={d[0]} już mamy w bazie....')
+            connection.rollback()
+
+#ORM -- Hibernate, Entity -- SQL Alchemy, Django ORM
+#
+# session.add(obj)
+# Product.query.all()
+
+#Flask, Django, Pyramid, Fast Api

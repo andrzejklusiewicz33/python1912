@@ -1454,3 +1454,66 @@
 
 #36. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone do 2 miejsc po przecinku BMI.
 # W przypadku pojawienia się wyjątku, wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.
+
+# x=1.5
+# if type(x)==float:
+#     print('to je float')
+# else:
+#     print(f'to je typ {type(x)}')
+
+# def bmi(w,m):
+#     try:
+#         return round(m/pow(w,2),2)
+#     except ZeroDivisionError:
+#         print('Podałeś zerowy wzrost')
+#         return -1
+#     except TypeError:
+#         print('Jeden z podanych elementów nie jest liczbą')
+#         return -2
+#
+# print(bmi(0,100))
+# print(bmi('dupa',100))
+
+#
+# from faker import Faker
+# f=Faker("PL_pl")
+# for x in range(100):
+#     print(f.first_name(),f.last_name(),f.email(),f.company(),f.phone_number(),f.paragraph())
+#
+#
+# def funkcja(a,b):
+#     print(f'a={a}')
+#     print(f'b={b}')
+#
+# funkcja(1,2)
+# funkcja(1)
+
+
+
+# def funkcja(a,b="wartość domyślna"):
+#     print(f'a={a}')
+#     print(f'b={b}')
+#
+# funkcja(1,2)
+# funkcja(1)
+
+
+# def funkcja(b="wartość domyślna",a): #fuuuuuuu
+#     print(f'a={a}')
+#     print(f'b={b}')
+#
+# funkcja(1,2)
+# funkcja(1)
+#
+# def funkcja(a,b='wartość domyślna dla b',c="wartość domyślna dla c",d="wartość domyślna dla d"):
+#     print(f'a={a}')
+#     print(f'b={b}')
+#     print(f'c={c}')
+#     print(f'd={d}')
+#
+# funkcja(10,c="whatever")
+
+#37. Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku
+  # którego nazwę przekażemy przez pierwszy argument funkcji. Plik ma być otwarty z kodowaniem
+  # podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie pdane ma przyjac utf-8.
+  #Rozdzielacz kolumn ma być podawany jako trzeci argument funkcji, a jesli nie zostanie podany to ma przyjac ;

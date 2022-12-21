@@ -1684,9 +1684,19 @@
 # import psycopg2
 # connection=psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",password='oracle', port=5432)
 # connection.close()
+#
+# with open('dane.csv',encoding='utf-8') as plik:
+#     pass
+#
+# import psycopg2
+# with psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",password='oracle', port=5432) as connection:
+#     cursor=connection.cursor()
+#     sql='select * from products order by price desc'
+#     cursor.execute(sql)
+#     for w in cursor:
+#         print(w)
+#
 
 
-import psycopg2
-with psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",password='oracle', port=5432) as connection:
-    pass
-print('koniec')
+#42. Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
+# wszystkie wiersze z tabelki employees w fomacie csv.

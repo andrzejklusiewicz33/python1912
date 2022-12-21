@@ -1318,4 +1318,47 @@
 # f()
 
 
-#33.Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
+#33. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
+# for x in range(-10,11):
+#     print(1/x)
+
+
+
+# print('dupa1')
+# print(1/0)
+# print('dupa2')
+# print(1/0)
+# print('dupa3')
+# print(1/0)
+#
+# print('przed')
+# try:
+#     print(1/0)
+# except:
+#     print('muka...')
+# print('po')
+
+# print('przed')
+# try:
+#     print(1/0)
+#     print('po dzieleniu')
+# except Exception as e:
+#     print(f'muka...e={e} type(e)={type(e)}')
+# print('po')
+
+# print('przed')
+# try:
+#     print(1/0)
+#     raise IndexError
+#     print('po dzieleniu')
+# except IndexError:
+#     print('to się nie ma prawa zdarzyć')
+# except ZeroDivisionError:
+#     print('nie dziel przez zero...')
+# except Exception as e:
+#     print(f'muka...e={e} type(e)={type(e)}')
+# print('po')
+
+#34. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10 w taki
+# sposob by w przypadku wyjatku nie przerywac dzialania petli a po prostu wyswietlic
+# na konsoli informację o błędzie i przejsc do dalszego przetwarzania

@@ -1700,3 +1700,37 @@
 
 #42. Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
 # wszystkie wiersze z tabelki employees w fomacie csv.
+
+
+# import psycopg2
+# with psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",password='oracle', port=5432) as connection:
+#     cursor=connection.cursor()
+#     sql='select * from employees'
+#     cursor.execute(sql)
+#     with open('pracownicy.csv',encoding='utf-8',mode='w') as file:
+#         for w in cursor:
+#             #print(f"{w[0]};{w[1]};{w[2]}")
+#             #print(";".join(  [str(e) for e in w]   ))
+#             file.write(";".join([str(e) for e in w])+"\n")
+#         #file.write()
+
+
+#przerwa do 14:40
+
+# import psycopg2
+# with psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",password='oracle', port=5432) as connection:
+#     cursor=connection.cursor()
+#     imie='Zenek'
+#     nazwisko='Martyniuk'
+#     zarobki=1000000
+#     sql=f"insert into employees(first_name,last_name,salary) values ('{imie}','{nazwisko}',{zarobki})"
+#     cursor.execute(sql)
+#     connection.commit()
+#     #connection.rollback()
+
+#43. Korzystają z bibliotek faker i random wstaw do tabeli employees 20 wierszy z przykladowymi danymi
+#
+# from faker import Faker
+# f=Faker("PL_pl")
+# for x in range(100):
+#     print(f.first_name(),f.last_name(),f.email(),f.company(),f.phone_number(),f.paragraph())

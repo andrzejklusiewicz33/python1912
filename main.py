@@ -1517,3 +1517,15 @@
   # którego nazwę przekażemy przez pierwszy argument funkcji. Plik ma być otwarty z kodowaniem
   # podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie pdane ma przyjac utf-8.
   #Rozdzielacz kolumn ma być podawany jako trzeci argument funkcji, a jesli nie zostanie podany to ma przyjac ;
+
+#
+# def get_list(filename,enc='utf-8',delimeter=';'):
+#     return [e.strip().replace(',','.').split(delimeter) for e in open(filename,encoding=enc) if len(e.strip())>0]
+#
+# for e in get_list('dane.csv'):
+#     print(e)
+
+#38. Napisz funkcję która bedzie w stanie przyjąć taką listę jaka jest zwracana
+ # przez funkcję z poprzedniego ćwiczenia. Funkcja ta ma przeiterować po otrzymanej
+ # liście i wyświetlić każdy element na konsoli. Odbierz dane z funkcji z ćwiczenia
+ # poprzedniego i przekaz do nowo powstalej funkcji.

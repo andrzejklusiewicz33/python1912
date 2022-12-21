@@ -1519,8 +1519,8 @@
   #Rozdzielacz kolumn ma być podawany jako trzeci argument funkcji, a jesli nie zostanie podany to ma przyjac ;
 
 #
-def get_list(filename,enc='utf-8',delimeter=';'):
-    return [tuple(e.strip().replace(',','.').split(delimeter)) for e in open(filename,encoding=enc) if len(e.strip())>0]
+# def get_list(filename,enc='utf-8',delimeter=';'):
+#     return [tuple(e.strip().replace(',','.').split(delimeter)) for e in open(filename,encoding=enc) if len(e.strip())>0]
 
 # for e in get_list('dane.csv'):
 #     print(e)
@@ -1531,9 +1531,9 @@ def get_list(filename,enc='utf-8',delimeter=';'):
  # poprzedniego i przekaz do nowo powstalej funkcji.
 
 
-def print_list(data):
-    for d in data:
-        print(d)
+# def print_list(data):
+#     for d in data:
+#         print(d)
 
 # data=get_list('dane.csv')
 # print_list(data)
@@ -1544,4 +1544,96 @@ def print_list(data):
 
 #39. Napisz funkcję która przyjmie przez argumenty kwotę lokaty, oprocentowanie w skali roku, ilosc miesięcy.
 # Funkcja ma zwrócić zarobek na lokacie o podanych parametrach
+#
+# def lokata(hajs,oprocentowanie,ilosc_miesiecy):
+#     poczatkowo=hajs
+#     for m in range(1,ilosc_miesiecy+1):
+#         hajs=round(hajs+(hajs*oprocentowanie/12),2)
+#         print(m,hajs)
+#     return round(hajs-poczatkowo,2)
+#
+# print( f'wynik z lokaty={lokata(1000000,0.08,24)}')
+# import time
+# def zamulacz(x):
+#     time.sleep(1)
+#     return x*100
+#
+# for _ in range(10):
+#     for x in range(1,4):
+#         print(zamulacz(x))
+
+
+# import time
+# import functools
+#
+# @functools.lru_cache(maxsize=100)
+# def zamulacz(x):
+#     time.sleep(1)
+#     return x*100
+#
+# p=time.time()
+# for _ in range(10):
+#     for x in range(1,4):
+#         print(zamulacz(x))
+# k=time.time()
+# print(f'czas trwania {k-p}s')
+
+#przerwa do 11:30
+#
+# import tools
+# for w in tools.get_list('dane.csv'):
+#     print(w)
+
+
+# import tools as t
+# for w in t.get_list('dane.csv'):
+#     print(w)
+#
+# from tools import get_list
+# for w in get_list('dane.csv'):
+#     print(w)
+
+
+#from faker import Faker
+
+# from tools import *
+# for w in get_list('dane.csv'):
+#     print(w)
+#
+# import product_dao as prod_dao
+# import participant_dao as part_dao
+# print(prod_dao.get_all())
+# print(part_dao.get_all())
+
+#
+# import product_dao
+# import participant_dao
+# print(product_dao.get_all())
+# print(participant_dao.get_all())
+#
+# from product_dao import *
+# from participant_dao import *
+# print(get_all())
+
+# import tools
+# #import this
+# tools.x='whatever'
+# print(tools.x)
+
+#pl.jsystems.phoenix.dao
+
+# import muppet.tools
+# print(muppet.tools.bmi(1.76,80))
+#
+# import muppet.tools as mt
+# print(mt.bmi(1.76,80))
+
+
+# from muppet.tools import *
+# print(bmi(1.76,80))
+
+#40.Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
+# Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było  podawać nazwy pakietu ani modułu.
+
+
 

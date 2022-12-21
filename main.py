@@ -1671,3 +1671,15 @@
 #41. z usługi sieciowej http://jsystems.pl/Universe/samaTabelka.do pobierz informację o szkoleniach.
 # na konsoli wyswietl tytuly, miasta i daty wszystkich szkolen które w tytule mają malymi badz duzymi
 # literami "Python" i status terminu gwarantowanego (pole terminyGwarantowany=1)
+
+#
+# import requests
+# response=requests.get('http://jsystems.pl/Universe/samaTabelka.do')
+# if response.status_code==200:
+#     for d in [e for e in response.json() if 'python' in e['tytul_szkolenia'].lower() and e['terminyGwarantowany']==1]:
+#         print(d['tytul_szkolenia'],d['termin'],d['miasto'])
+
+#obiadek do 13:15
+
+import psycopg2
+connection=psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",password='oracle', port=5432)

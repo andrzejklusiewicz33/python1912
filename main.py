@@ -1283,16 +1283,39 @@
 # print(f'trwało to {koniec-poczatek} s')
 
 
-calosc=open('tadzio.txt',encoding='utf-8').read().lower()
-for n in ['.',',','!','?','/',':',';','(',')','-','…']:
-    calosc=calosc.replace(n,'')
-sl=dict()
-for s in calosc.split():
-    if s in sl:
-        sl[s]+=1
-    else:
-        sl[s]=1
-wynik=[]
-wynik=sorted([ [k,sl[k]] for k in sl],key=lambda e:e[1], reverse=True)
-for w in wynik:
-    print(w)
+# calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+# for n in ['.',',','!','?','/',':',';','(',')','-','…']:
+#     calosc=calosc.replace(n,'')
+# sl=dict()
+# for s in calosc.split():
+#     if s in sl:
+#         sl[s]+=1
+#     else:
+#         sl[s]=1
+# wynik=[]
+# wynik=sorted([ [k,sl[k]] for k in sl],key=lambda e:e[1], reverse=True)
+# for w in wynik:
+#     print(w)
+#
+# import time
+# def metryki(fun):
+#     def wewnetrzna(*args,**kwargs):
+#         p=time.time()
+#         fun(*args,**kwargs)
+#         k=time.time()
+#         print(f"Funkcja {fun.__name__} wykonała się w {round(k-p,2)}s")
+#
+#     return wewnetrzna
+# @metryki
+# def koza():
+#     time.sleep(1)
+#     print('dupa')
+#
+# koza()
+
+#
+# f=metryki(fun)
+# f()
+
+
+#33.Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.

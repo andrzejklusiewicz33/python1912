@@ -1519,9 +1519,9 @@
   #Rozdzielacz kolumn ma być podawany jako trzeci argument funkcji, a jesli nie zostanie podany to ma przyjac ;
 
 #
-# def get_list(filename,enc='utf-8',delimeter=';'):
-#     return [e.strip().replace(',','.').split(delimeter) for e in open(filename,encoding=enc) if len(e.strip())>0]
-#
+def get_list(filename,enc='utf-8',delimeter=';'):
+    return [tuple(e.strip().replace(',','.').split(delimeter)) for e in open(filename,encoding=enc) if len(e.strip())>0]
+
 # for e in get_list('dane.csv'):
 #     print(e)
 
@@ -1529,3 +1529,19 @@
  # przez funkcję z poprzedniego ćwiczenia. Funkcja ta ma przeiterować po otrzymanej
  # liście i wyświetlić każdy element na konsoli. Odbierz dane z funkcji z ćwiczenia
  # poprzedniego i przekaz do nowo powstalej funkcji.
+
+
+def print_list(data):
+    for d in data:
+        print(d)
+
+# data=get_list('dane.csv')
+# print_list(data)
+#
+# print_list(get_list('dane.csv'))
+#
+# print_list("łot da...")
+
+#39. Napisz funkcję która przyjmie przez argumenty kwotę lokaty, oprocentowanie w skali roku, ilosc miesięcy.
+# Funkcja ma zwrócić zarobek na lokacie o podanych parametrach
+

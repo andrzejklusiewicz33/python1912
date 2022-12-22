@@ -2192,3 +2192,35 @@
 # Zadbaj o to by nie dało się ustawić marki ani modelu o zerowej długości oraz o to by długość rejestracji
 # zawsze mieściła się w zakresie 7-8 znaków. W przypadku podania niewłasciwych danych rzuć wyjątkiem
 # z adekwatnym komunikatem.
+
+class Car:
+
+    def __init__(self, ma, mo, re):
+        self.set_mark(ma)
+        self.set_model(mo)
+        self.set_registration(re)
+
+    def __str__(self):
+        return str(self.__dict__)
+
+    def set_mark(self,mark):
+        if mark is None or len(mark)==0:
+            raise Exception("Marka nie może być pusta")
+        self.mark=mark
+
+    def set_model(self,model):
+        if model is None or len(model)==0:
+            raise Exception("Model nie może być")
+        self.model=model
+
+    def set_registration(self,registration):
+        if registration is None or len(registration)<7 or len(registration)>8:
+            raise Exception("Rejestracja musi mieć 7-8 znaków")
+        self.registration=registration
+
+c=Car("A","B","12345678")
+#c=Car("A","B","123456789")
+#c=Car("A",None,"12345678")
+#c=Car(None,"B","12345678")
+print(c)
+c.set_mark(None)

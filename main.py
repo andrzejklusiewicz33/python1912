@@ -1757,19 +1757,19 @@
 # except Exception as e:
 #     print(e,type(e))
 
-import psycopg2
-dane=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
-with psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",password='oracle', port=5432) as connection:
-    cursor = connection.cursor()
-    for d in dane:
-        try:
-            sql=f"insert into players values({d[0]},'{d[1]}','{d[2]}',{d[3]},{d[4]})"
-            print(sql)
-            cursor.execute(sql)
-            connection.commit()
-        except psycopg2.errors.UniqueViolation:
-            print(f'zawodnika o id={d[0]} już mamy w bazie....')
-            connection.rollback()
+# import psycopg2
+# dane=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# with psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",password='oracle', port=5432) as connection:
+#     cursor = connection.cursor()
+#     for d in dane:
+#         try:
+#             sql=f"insert into players values({d[0]},'{d[1]}','{d[2]}',{d[3]},{d[4]})"
+#             print(sql)
+#             cursor.execute(sql)
+#             connection.commit()
+#         except psycopg2.errors.UniqueViolation:
+#             print(f'zawodnika o id={d[0]} już mamy w bazie....')
+#             connection.rollback()
 
 #ORM -- Hibernate, Entity -- SQL Alchemy, Django ORM
 #
@@ -1777,3 +1777,52 @@ with psycopg2.connect(host="localhost",database="asseco",user="asseco_dev",passw
 # Product.query.all()
 
 #Flask, Django, Pyramid, Fast Api
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#
+# p1=Person()
+# p1.first_name='Andrzej'
+# p1.last_name='Klusiewicz'
+#
+# p2=Person()
+# p2.first_name='Marysia'
+# p2.last_name='Klusiewicz'
+#
+# print(p1.first_name,p1.last_name)
+# print(p2.first_name,p2.last_name)
+#
+# p3=Person("Andrzej",'Klusiewicz')
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def __init__(self,fn,ln):
+#         print('siema!')
+#
+# p=Person()
+
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def introduce(self):
+#         print(f'Siema, jestem {self.first_name} {self.last_name}!')
+#
+# p1=Person()
+# p1.first_name='Andrzej'
+# p1.last_name='Klusiewicz'
+#
+# p2=Person()
+# p2.first_name='Marysia'
+# p2.last_name='Kowalska'
+#
+# print(p1.first_name,p1.last_name)
+# print(p2.first_name,p2.last_name)
+# p1.introduce()
+# p2.introduce()
+
+#45. Stwórz klasę "Samochod" posiadającą pola "marka", "model", "rejestracja".
+# Klasa ta powinna zawierać też metodę "wyswietl" wypisującą dane z obiektu na konsoli
+# Stwórz dwa obiekty tej klasy i korzystajac  z metody "wyświetl" wyswietl na konsoli ich zawartość.

@@ -2294,3 +2294,210 @@
 
 
 
+# class Samochod:
+#
+#     def __init__(self,ma,mo,re):
+#         self.marka=ma
+#         self.model=mo
+#         self.rejestracja=re
+#     def jedz(self):
+#         print('Wrooom!')
+#
+# class Dzialo:
+#
+#     # def __init__(self):
+#     #     pass
+#     def strzelaj(self):
+#         print("jeb z granatnika")
+#
+# class Czolg(Samochod,Dzialo):
+#     def __init__(self):
+#         pass
+#
+# c=Czolg()
+# c.jedz()
+# c.strzelaj()
+
+#
+# class Samochod:
+#
+#     def __init__(self,ma,mo,re):
+#         self.marka=ma
+#         self.model=mo
+#         self.rejestracja=re
+#     def jedz(self):
+#         print('Wrooom!')
+
+# class Dzialo:
+#
+#     # def __init__(self):
+#     #     pass
+#     def strzelaj(self):
+#         print("jeb z granatnika")
+#
+# class Czolg(Samochod,Dzialo):
+#     def __init__(self,ma,mo,re,cos):
+#         super().__init__(ma,mo,re)
+#         self.cos=cos
+#
+# c=Czolg(1,2,3,4)
+# c.jedz()
+# c.strzelaj()
+
+#
+# class PostgresqlDao:
+#     def get_all(self):
+#         return "dane z PostgreSQL"
+# class OracleDao:
+#     def get_all(self):
+#         return "dane z Oracle"
+#
+# class Komponent:
+#
+#     dao=None
+#
+#     def __init__(self,type): #złe rozwiązanie - łamiemy O w SOLID
+#         if type=="oracle":
+#             self.dao=OracleDao()
+#         elif type=="postgresql":
+#             self.dao=PostgresqlDao()
+#     def go(self):
+#         print(self.dao.get_all())
+#
+# #
+# # k=Komponent("oracle")
+# # k.go()
+#
+#
+# k=Komponent("postgresql")
+# k.go()
+
+#
+#
+# class PostgresqlDao:
+#     def get_all(self):
+#         return "dane z PostgreSQL"
+# class OracleDao:
+#     def get_all(self):
+#         return "dane z Oracle"
+#
+# class DB2Dao:
+#     def get_all(self):
+#         return "dane z DB2"
+# class Komponent:
+#
+#     dao=None
+#     def __init__(self,type): #złe rozwiązanie - łamiemy O w SOLID
+#         if type=="oracle":
+#             self.dao=OracleDao()
+#         elif type=="postgresql":
+#             self.dao=PostgresqlDao()
+#         elif type=="db2":
+#             self.dao=DB2Dao()
+#     def go(self):
+#         print(self.dao.get_all())
+#
+# #
+# # k=Komponent("oracle")
+# # k.go()
+#
+#
+# # k=Komponent("postgresql")
+# # k.go()
+#
+# k=Komponent("db2")
+# k.go()
+
+
+
+#
+# class PostgresqlDao:
+#     def get_all(self):
+#         return "dane z PostgreSQL"
+# class OracleDao:
+#     def get_all(self):
+#         return "dane z Oracle"
+#
+# class DB2Dao:
+#     def get_all(self):
+#         return "dane z DB2"
+#
+# class SQLServerDao:
+#     def get_all(self):
+#         return "dane z SQL Server"
+# class Komponent:
+#
+#     dao=None
+#     def __init__(self,dao):
+#         self.dao=dao
+#     def go(self):
+#         print(self.dao.get_all())
+#
+#
+# k=Komponent(OracleDao())
+# k.go()
+#
+# k=Komponent(PostgresqlDao())
+# k.go()
+#
+# k=Komponent(DB2Dao())
+# k.go()
+#
+# k=Komponent(SQLServerDao())
+# k.go()
+
+#
+# from abc import ABC,abstractmethod
+# class AbstractDao(ABC):
+#     @abstractmethod
+#     def get_all(self):
+#         pass
+#
+#
+# class PostgresqlDao(AbstractDao):
+#     def get_all(self):
+#         return "dane z PostgreSQL"
+#
+# #pdao=PostgresqlDao()
+#     # def get_all(self):
+#     #     return "dane z PostgreSQL"
+#
+#
+# class OracleDao(AbstractDao):
+#     def get_all(self):
+#         return "dane z Oracle"
+# #
+# class DB2Dao(AbstractDao):
+#     def get_all(self):
+#         return "dane z DB2"
+#     pass
+#
+# class SQLServerDao(AbstractDao):
+#     def get_all(self):
+#         return "dane z SQL Server"
+#
+# class Komponent:
+#
+#     dao=None
+#     def __init__(self,dao):
+#         self.dao=dao
+#     def go(self):
+#         print(self.dao.get_all())
+#
+#
+# k=Komponent(OracleDao())
+# k.go()
+#
+# k=Komponent(PostgresqlDao())
+# k.go()
+#
+# k=Komponent(DB2Dao())
+# k.go()
+#
+# k=Komponent(SQLServerDao())
+# k.go()
+
+#54. Stwórz klasę abstrakcyjną Restauracja która będzie posiadała abstrakcyjną metodę "serwuj_danie".
+# Stwórz klasy "RestauracjaChinska", "RestauracjaWloska" i "RestaruracjaPolska".
+# Wymuś posiadanie implementacji metody abstrakcyjnej "serwuj_danie" we wszystkich tych klasach ale o różnej implementacji.
+# Powołaj do życia obiekty tych klas, a następnie na rzecz każdego z tych obiektów wywołaj funkcję serwuj_danie.

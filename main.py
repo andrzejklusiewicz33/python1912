@@ -2025,12 +2025,22 @@
 # print(p)
 
 #50. Przesłoń metodę "__str__" w klasie "Samochod". Stwórz obiekt i wyświetl jego zserializowaną postać
+#
+# class Car:
+#     def __init__(self,ma,mo,rn):
+#         self.mark=ma
+#         self.model=mo
+#         self.register_number=rn
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+#
+# c=Car("Czarny","Ciągnik","POJ 2.400")
+# print(c)
 
-class Car:
-    def show(self):
-        print(f'mark={self.mark}, model={self.model}, register_number={self.register_number}')
+#51.  Załaduj dane z pliku dane.csv do postaci listy obiektów.
+# Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
 
-    def __init__(self,ma,mo,rn):
-        self.mark=ma
-        self.model=mo
-        self.register_number=rn
+#Klasa Player
+#konstruktor sparametryzowany
+#__str__ przesloniete

@@ -2192,35 +2192,105 @@
 # Zadbaj o to by nie dało się ustawić marki ani modelu o zerowej długości oraz o to by długość rejestracji
 # zawsze mieściła się w zakresie 7-8 znaków. W przypadku podania niewłasciwych danych rzuć wyjątkiem
 # z adekwatnym komunikatem.
+#
+# class Car:
+#
+#     def __init__(self, ma, mo, re):
+#         self.set_mark(ma)
+#         self.set_model(mo)
+#         self.set_registration(re)
+#
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+#     def set_mark(self,mark):
+#         if mark is None or len(mark)==0:
+#             raise Exception("Marka nie może być pusta")
+#         self.mark=mark
+#
+#     def set_model(self,model):
+#         if model is None or len(model)==0:
+#             raise Exception("Model nie może być")
+#         self.model=model
+#
+#     def set_registration(self,registration):
+#         if registration is None or len(registration)<7 or len(registration)>8:
+#             raise Exception("Rejestracja musi mieć 7-8 znaków")
+#         self.registration=registration
+#
+# c=Car("A","B","12345678")
+# #c=Car("A","B","123456789")
+# #c=Car("A",None,"12345678")
+# #c=Car(None,"B","12345678")
+# print(c)
+# c.set_mark(None)
 
-class Car:
+#przerwa do 12:08
 
-    def __init__(self, ma, mo, re):
-        self.set_mark(ma)
-        self.set_model(mo)
-        self.set_registration(re)
+#
+# class A:
+#     def funkcja1(self):
+#         print('funkcja1 z A')
+#
+#
+# class B(A):
+#     def funkcja2(self):
+#         print('funkcja2 z B')
+#
+#
+# class C(B):
+#     def funkcja3(self):
+#         print('funkcja3 z C')
+#
+# a=A()
+# a.funkcja1()
+# b=B()
+# b.funkcja1()
+# b.funkcja2()
+# c=C()
+# c.funkcja1()
+# c.funkcja2()
+# c.funkcja3()
+#
+# class A:
+#     def funkcja_A(self):
+#         print("funkcja_A")
+#
+# class B:
+#     def funkcja_B(self):
+#         print("funkcja_B")
+#
+# class C(A,B):
+#     pass
+#
+# c=C()
+# c.funkcja_A()
+# c.funkcja_B()
+#
+#
+# class A:
+#     def funkcja(self):
+#         print("funkcja_A")
+#
+# class B:
+#     def funkcja(self):
+#         print("funkcja_B")
+#
+# class C(B,A):
+#     pass
+#
+# c=C()
+# c.funkcja()
+#
+# #c.funkcja_B()
 
-    def __str__(self):
-        return str(self.__dict__)
+#53.  Stwórz klasę Samochod i dodaj do niej metodę jedz() która bedzie wyświetlala napis na konsoli.
+# Dodaj konstruktor pozwalajacy tworzyc obiekty z podaniem marki modelu i rejestracji do klasy Samochod.
+# Stwórz klasę "Działo" która będzie posiadała metodę strzelaj(). Stwórz klasę "Czolg" która będzie dziedziczyła
+# po klasach Samochod i Dzialo. Stwórz obiekt klasy Czolg i wywolaj na nim zarówno metodę jedz() jak i strzelaj().
+# Zwróć uwagę na to jak trzeba wywołać konstruktor obiektu klasy Czolg.
+# Sprawdz czy zmiana kolejnosci dziedziczenia wplywa na sposob wywołania konstruktora.
+# Sprawdz czy dodanie bezparametrowego __init__ do klasy Czolg zmienia zachowanie.
 
-    def set_mark(self,mark):
-        if mark is None or len(mark)==0:
-            raise Exception("Marka nie może być pusta")
-        self.mark=mark
 
-    def set_model(self,model):
-        if model is None or len(model)==0:
-            raise Exception("Model nie może być")
-        self.model=model
 
-    def set_registration(self,registration):
-        if registration is None or len(registration)<7 or len(registration)>8:
-            raise Exception("Rejestracja musi mieć 7-8 znaków")
-        self.registration=registration
-
-c=Car("A","B","12345678")
-#c=Car("A","B","123456789")
-#c=Car("A",None,"12345678")
-#c=Car(None,"B","12345678")
-print(c)
-c.set_mark(None)

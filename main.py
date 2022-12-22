@@ -2044,3 +2044,151 @@
 #Klasa Player
 #konstruktor sparametryzowany
 #__str__ przesloniete
+#
+# class Player:
+#     def __init__(self,player_id,first_name,last_name,height,weight):
+#         self.player_id=player_id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+#
+# wynik=[]
+# for e in [d.strip().split(';') for d in open('dane.csv',encoding='utf-8')]:
+#     p=Player(e[0],e[1],e[2],e[3],e[4])
+#     wynik.append(p)
+#
+# for w in wynik:
+#     print(w)
+
+# p=Player(1,'A','B',1.76,80)
+# print(p)
+
+
+# class Player:
+#     def __init__(self,player_id,first_name,last_name,height,weight):
+#         self.player_id=player_id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+#
+# wynik=[Player(e[0],e[1],e[2],e[3],e[4]) for e in [d.strip().split(';') for d in open('dane.csv',encoding='utf-8')]]
+#
+# for w in wynik:
+#     print(w)
+# #
+# class Player:
+#     def __init__(self,player_id,first_name,last_name,height,weight):
+#         self.player_id=player_id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# for w in [Player(e[0],e[1],e[2],e[3],e[4]) for e in [d.strip().split(';') for d in open('dane.csv',encoding='utf-8')]]:
+#     print(w)
+
+
+#
+# class Person:
+#     def __init__(self,fn,ln):
+#         if fn is None or len(fn)==0:
+#             raise Exception('Pole first_name nie może być puste')
+#         if ln is None or len(ln)==0:
+#             raise Exception('Pole last_name nie może być puste')
+#         self.first_name = fn
+#         self.last_name = ln
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# #p=Person(None,None)
+# #p=Person('','')
+# p=Person('A','B')
+# print(p)
+
+
+
+# class Person:
+#     def __init__(self,fn,ln):
+#         if fn is None or len(fn)==0:
+#             raise Exception('Pole first_name nie może być puste')
+#         if ln is None or len(ln)==0:
+#             raise Exception('Pole last_name nie może być puste')
+#         self.__first_name = fn
+#         self.__last_name = ln
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p=Person('A','B')
+# p.first_name=None
+# p.last_name=None
+# print(p)
+#
+# class Person:
+#     def __init__(self,fn,ln):
+#         if fn is None or len(fn)==0:
+#             raise Exception('Pole first_name nie może być puste')
+#         if ln is None or len(ln)==0:
+#             raise Exception('Pole last_name nie może być puste')
+#         self.__first_name = fn
+#         self.__last_name = ln
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p=Person('A','B')
+# p.__first_name=None
+# p.__last_name=None
+# print(p)
+
+
+#
+# class Person:
+#
+#     __first_name=None
+#     __last_Name=None
+#     def set_first_name(self,fn):
+#         if fn is None or len(fn) == 0:
+#             raise Exception('Pole first_name nie może być puste')
+#         self.__first_name = fn
+#
+#     def set_last_name(self,ln):
+#         if ln is None or len(ln) == 0:
+#             raise Exception('Pole last_name nie może być puste')
+#         self.__last_name = ln
+#
+#     def get_first_name(self):
+#         return self.__first_name
+#
+#     def get_last_name(self):
+#         return self.__last_name
+#     def __init__(self,fn,ln):
+#         self.set_first_name(fn)
+#         self.set_last_name(ln)
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p=Person('A','B')
+# #p.set_last_name(None)
+# p.set_last_name("AAAAAA")
+# #p.set_first_name(None)
+# p.set_first_name("BBBBBBBB")
+# print(p)
+# print(p.get_last_name())
+
+
+#52. Stwórz klasę Samochod od nowa z polami marka, model, rejestracja oraz zaimplementowaną metodą __str__.
+# Zadbaj o to by w klasie samochód wszystkie pola były prywatne, ale by istniały metody typu
+# setter służące do ustawiania wartości tych pól.
+# Zadbaj o to by wszystkie odwołania wewnątrz klasy do pól były wykonywane za pośrednictwem setterów.
+# Zadbaj o to by nie dało się ustawić marki ani modelu o zerowej długości oraz o to by długość rejestracji
+# zawsze mieściła się w zakresie 7-8 znaków. W przypadku podania niewłasciwych danych rzuć wyjątkiem
+# z adekwatnym komunikatem.

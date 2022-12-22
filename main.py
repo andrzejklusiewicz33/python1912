@@ -1867,9 +1867,75 @@
 #46. Zadbaj o to by klasa Samochod posiadała metodę pozwalającą ustawić wartości wszystkich pól.
 # Jej przykładowe wywołanie: s1.ustaw_wartosci(‘Renault’,’Kadjar’,’ABC1234’)
 
+# class Car:
+#     '''Pamiętaj o możliwości użycia funkcji set_values!'''
+#     mark=None
+#     model=None
+#     register_number=None
+#     def show(self):
+#         print(f'mark={self.mark}, model={self.model}, register_number={self.register_number}')
+#
+#     def set_values(self,ma,mo,rn):
+#         self.mark=ma
+#         self.model=mo
+#         self.register_number=rn
+#
+# #help(Car)
+#
+# c=Car()
+# #c.set_values("Audi","Q5",'ABC 12345')
+# c.show()
+#
+# class Person:
+#     first_name=None
+#     last_name=None
+#
+#     def __init__(self,fn,ln):
+#         print(f"Siema, tu konstruktor! Podane wartości fn={fn}, ln={ln}" )
+#         self.first_name = fn
+#         self.last_name = ln
+#     def introduce(self):
+#         print(f'Siema, jestem {self.first_name} {self.last_name}!')
+#
+# #p1=Person()
+#
+# p1=Person("Andrzej","Klusiewicz")
+# p1.introduce()
+
+
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#
+#     def __init__(self,fn,ln="nie podano"):
+#         print(f"Siema, tu konstruktor! Podane wartości fn={fn}, ln={ln}" )
+#         self.first_name = fn
+#         self.last_name = ln
+#     def introduce(self):
+#         print(f'Siema, jestem {self.first_name} {self.last_name}!')
+#
+# #p1=Person()
+#
+# p1=Person("Andrzej")
+# p2=Person("Andrzej","Klusiewicz")
+# p1.introduce()
+# p2.introduce()
+#
+# print(p1.__dict__)
+
+#47. Dodaj do klasy Samochód konstruktor wymuszający ustawienie wartości wszystkich pól przy tworzeniu obiektu.
+# Stworz obiekt klasy samochod i wywolaj na nim metode wyswietl
+
 class Car:
+    '''Pamiętaj o możliwości użycia funkcji set_values!'''
     mark=None
     model=None
     register_number=None
     def show(self):
         print(f'mark={self.mark}, model={self.model}, register_number={self.register_number}')
+
+    def set_values(self,ma,mo,rn):
+        self.mark=ma
+        self.model=mo
+        self.register_number=rn

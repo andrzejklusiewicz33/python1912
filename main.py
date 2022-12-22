@@ -1866,3 +1866,10 @@
 
 #46. Zadbaj o to by klasa Samochod posiadała metodę pozwalającą ustawić wartości wszystkich pól.
 # Jej przykładowe wywołanie: s1.ustaw_wartosci(‘Renault’,’Kadjar’,’ABC1234’)
+
+class Car:
+    mark=None
+    model=None
+    register_number=None
+    def show(self):
+        print(f'mark={self.mark}, model={self.model}, register_number={self.register_number}')

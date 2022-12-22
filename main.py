@@ -1979,3 +1979,58 @@
 # Stwórz klasę Ustawienia która będzie posiadała słownik. Niech każdy obiekt klasy ustawienia podczas jego tworzenia
 # wczytuje do tego słownika zawartość pliku konfiguracyjnego w taki sposób, by pierwsza kolumna stanowiła
 # klucze dla słownika a druga wartości. Stwórz obiekt i wydrukuj zawartość zawartego w nim słownika
+
+#
+# class Settings:
+#     def __init__(self):
+#         self.conf=dict()
+#         for f in [e.strip().split('=') for e in open('ustawienia.conf')]:
+#             self.conf[f[0]]=f[1]
+#
+#
+# s=Settings()
+# print(s.conf)
+#
+#
+# class Settings:
+#     def __init__(self,file_name="ustawienia.conf"):
+#         self.conf=dict()
+#         for f in [e.strip().split('=') for e in open(file_name,encoding='utf-8')]:
+#             self.conf[f[0]]=f[1]
+#
+#
+# s=Settings()
+# print(s.conf)
+# s=Settings("ustawienia.conf")
+# print(s.conf)
+
+
+
+
+
+
+# class Person:
+#     def __init__(self,fn,ln="nie podano"):
+#         self.first_name = fn
+#         self.last_name = ln
+#
+#     def __str__(self):
+#         #return f"first_name={self.first_name}, last_name={self.last_name}"
+#         return str(self.__dict__)
+#
+#
+#
+#
+# p=Person("Zenek","Martyniuk")
+# print(p)
+
+#50. Przesłoń metodę "__str__" w klasie "Samochod". Stwórz obiekt i wyświetl jego zserializowaną postać
+
+class Car:
+    def show(self):
+        print(f'mark={self.mark}, model={self.model}, register_number={self.register_number}')
+
+    def __init__(self,ma,mo,rn):
+        self.mark=ma
+        self.model=mo
+        self.register_number=rn

@@ -1826,3 +1826,43 @@
 #45. Stwórz klasę "Samochod" posiadającą pola "marka", "model", "rejestracja".
 # Klasa ta powinna zawierać też metodę "wyswietl" wypisującą dane z obiektu na konsoli
 # Stwórz dwa obiekty tej klasy i korzystajac  z metody "wyświetl" wyswietl na konsoli ich zawartość.
+
+#PEP8
+
+# class Car:
+#     mark=None
+#     model=None
+#     register_number=None
+#     def show(self):
+#         print(f'mark={self.mark}, model={self.model}, register_number={self.register_number}')
+#
+# c1=Car()
+# c1.set("Renault","Kadjar","WW 12345")
+# c1.mark="Renault"
+# c1.model="Kadjar"
+# c1.register_number="WY 12345"
+# c1.show()
+#
+# c2=Car()
+# c2.mark="Opel"
+# c2.model="Mokka"
+# c2.register_number="WU 12345"
+# c2.show()
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def introduce(self):
+#         print(f'Siema, jestem {self.first_name} {self.last_name}!')
+#
+#     def set(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#
+# p1=Person()
+# p1.set("Andrzej","Klusiewicz")
+#p1.introduce()
+# p1.first_name='Andrzej'
+# p1.last_name='Klusiewicz'
+
+#46. Zadbaj o to by klasa Samochod posiadała metodę pozwalającą ustawić wartości wszystkich pól.
+# Jej przykładowe wywołanie: s1.ustaw_wartosci(‘Renault’,’Kadjar’,’ABC1234’)
